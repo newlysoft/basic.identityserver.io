@@ -26,6 +26,6 @@ namespace BasicClient
         public const string UserInfoEndpoint = BaseUrl + "/connect/userinfo";
         public const string EndSessionEndpoint = BaseUrl + "/connect/endsession";
 
-        public const string CallbackEndpoint  = "https://localhost:44327/account/callback";
+        public const string CallbackEndpoint  = "https://basic.getidentityserver.com/account/callback";
     }
 }
