@@ -1,0 +1,13 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+
+namespace BasicClient.Models
+{
+    public class ValidationResult
+    {
+        public bool IsError { get; set; }
+        public string Error { get; set; }
+    }
+}

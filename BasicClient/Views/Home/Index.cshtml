@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "Home";
+}
+
+<h2>Home</h2>
+
+@if(!User.Identity.IsAuthenticated)
+{
+    <p>
+        @Html.ActionLink("login", "Login", "Account")
+    </p>
+}
+
+@if (User.Identity.IsAuthenticated)
+{
+    <p>
+        @Html.ActionLink("logout", "Logout", "Account")
+    </p>
+    
+    <h3>Claims</h3>
+    <dl>
+        @foreach (var claim in (User as System.Security.Claims.ClaimsPrincipal).Claims)
+        {
+            <dt>@claim.Type</dt>
+            <dd>@claim.Value</dd>
+        }
+    </dl>
+}
