@@ -19,13 +19,13 @@ namespace BasicClient
         }
 
         public const string IssuerName = BaseUrl;
-        public const string BaseUrl = "https://demo.getidentityserver.com";
+        public const string BaseUrl = "https://demo.identityserver.io";
 
         public const string AuthorizeEndpoint = BaseUrl + "/connect/authorize";
         public const string TokenEndpoint = BaseUrl + "/connect/token";
         public const string UserInfoEndpoint = BaseUrl + "/connect/userinfo";
         public const string EndSessionEndpoint = BaseUrl + "/connect/endsession";
 
-        public const string CallbackEndpoint  = "https://basic.getidentityserver.com/account/callback";
+        public const string CallbackEndpoint  = "https://basic.identityserver.io/account/callback";
     }
 }
